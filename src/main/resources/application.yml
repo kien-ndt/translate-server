@@ -2,3 +2,12 @@ oxford:
   api-domain: https://od-api.oxforddictionaries.com/api/v2
   app_id:  930a3197
   app_key:  6f4ccdbe544a2c8dfec3a7c5c062afe2
+spring:
+  mongodb:
+    embedded:
+      version: 4.0.6
+  data:
+    mongodb:
+      database: XpierDb
+      host: localhost
+      port: 27017
