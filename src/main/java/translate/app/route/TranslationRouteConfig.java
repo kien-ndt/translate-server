@@ -23,9 +23,4 @@ public class TranslationRouteConfig {
                 .build();
     }
 	
-    @Bean
-    public WebProperties.Resources resources() {
-        return new WebProperties.Resources();
-    }
-
 }

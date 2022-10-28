@@ -1,32 +1,16 @@
 package translate.app.api.translation.resource;
 
+import java.util.List;
+
+import translate.app.api.translation.external.entity.TranslationResult.BilingualHeadwordEntry.BilingualLexicalEntry.BilingualEntry;
+
 public class TranslationGetResponse {
-	private String id;
-	private String userId;
-	private String title;
-	private String completed;
-	public String getId() {
-		return id;
+	public String id;
+	public List<Results> results;
+	
+	public static class Results {
+		public String language;
+		public List<BilingualEntry> entries;
+		public String category;
 	}
-	public void setId(String id) {
-		this.id = id;
-	}
-	public String getUserId() {
-		return userId;
-	}
-	public void setUserId(String userId) {
-		this.userId = userId;
-	}
-	public String getTitle() {
-		return title;
-	}
-	public void setTitle(String title) {
-		this.title = title;
-	}
-	public String getCompleted() {
-		return completed;
-	}
-	public void setCompleted(String completed) {
-		this.completed = completed;
-	}	
 }

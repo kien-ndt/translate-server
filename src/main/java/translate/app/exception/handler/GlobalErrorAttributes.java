@@ -21,11 +21,9 @@ public class GlobalErrorAttributes extends DefaultErrorAttributes {
 			return getValidationErrorExceptionAttributes((ValidationErrorException) exception);
 		}
 		
-		if (exception instanceof Exception) {
-		}
-		
 		Map<String, Object> errorAttributes = new HashMap<>();
-		errorAttributes.put("gi do", "1231321");
+		errorAttributes.put("statusCode", "500");
+		errorAttributes.put("message", "Sorry for this trouble");
 		return errorAttributes;
 	}
 	

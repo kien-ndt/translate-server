@@ -18,10 +18,10 @@ public class TranslationResult {
 			public LexicalCategory lexicalCategory;
 			
 			public static class BilingualEntry {
-				public List<pronunciations> pronunciations;
+				public List<Pronunciations> pronunciations;
 				public List<BilingualSense> senses;
 				
-				public static class pronunciations {
+				public static class Pronunciations {
 					public String audioFile;
 					public List<String> dialects;
 					public String phoneticSpelling;
